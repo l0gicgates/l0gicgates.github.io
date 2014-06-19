@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +11,27 @@
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 	 <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body ng-controller="MyCtrl">
 	<!-- Begin page content -->
-    <div class="container" align="center">
-    	 <div class="row">
+    <div class="container">
+    	 <div class="row row-centered">
 	      <div>
 			
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center page-header">
+			<div class="col-xs-3 col-centered"> </div>
+
+			<div class="col-xs-6 col-centered">
+			<div>
 					<img border="0" src="1.png" style="float:left" class="img-responsive"  alt="Smiley Face">
 					<img border="0" src="logo.png" class="img-responsive"  alt="Logo" width="304" height="228">
 					
 
 					<hr> 
 			</div>
+
+
 	      		<hr> 
+
+	      		<br> <br> <br>
 	      	   <h2> Please provide the following words :</h2>
 	      	    <div class="form-inline">
 		      	   <input type="text" class="form-control" placeholder="Male name" ng-model="maleName" >
@@ -52,7 +59,6 @@
 
 
     
-	      </div>
 	      <div id="madLibsBody">
 		      	<p class="lead">{{ maleName }} was a {{jobTitle}} who loved technology. <br>
 		    		Although he loved parts of his job, he absolutely hate <br>
@@ -70,11 +76,11 @@
 
 	      </div>
 	      
-
-
+		</div>
+		<div class="col-xs-3 col-centered"> </div>
 		</div>
     </div>
-
+	</div>
     <div id="footer">
       <div class="container" align="center">
      	<a href="http://www.thinkful.com/courses/ANG-001/unit/1/lesson/1/assignment/2">  Thinkful - Unit 1 - Lesson 2 - Assignment 7 </a>
@@ -95,6 +101,5 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="calculator.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="madlibs.js"></script>
 </html>

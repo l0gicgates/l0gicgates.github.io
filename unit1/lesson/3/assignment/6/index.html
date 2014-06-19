@@ -45,7 +45,7 @@
 		      	   	<div class="form-inline">
 			      	   <input type="text" class="form-control" placeholder="Job title" ng-model="user.jobTitle" required>
 			      	   <input type="text" class="form-control" placeholder="Celebrity" ng-model="user.celebrity" required>
-			      	   <input type="number" class="form-control" placeholder="Huge number" ng-model="user.hugeNumber" min="10" required>
+			      	   <input type="number" class="form-control" placeholder="Huge number" ng-model="user.hugeNumber" min="10000" required>
 			      	    <span ng-show="form.user.hugeNumber.$error.integer">This is not valid integer!</span>
     					<span ng-show="form.user.hugeNumber.$error.min || form.user.hugeNumber.$error.max">
 		      	   	</div>

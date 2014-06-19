@@ -33,7 +33,7 @@
 
 	      		<br> <br> <br>
 	      		
-				<div id="words" ng-hide="showButton()" >	
+				<div id="words" ng-hide="showButton()" ng-animate="'slide'" class="slide-container" >	
 		      	   <h2> Please provide the following words :</h2>
 		      	   <form name="loginform" novalidate ng-submit="login.submit(loginForm)" class="css-form">
 		      	    <div class="form-inline">
@@ -69,7 +69,7 @@
 
 
     
-	      <div id="madLibsBody" ng-show="showButton()" >
+	      <div id="madLibsBody" ng-show="showButton()" ng-animate="'slide'" class="slide-container" >
 	      		<br> <br>
 		      	<p class="lead">{{ user.maleName }} was a {{user.jobTitle}} who loved technology. <br>
 		    		Although he loved parts of his job, he absolutely hate <br>

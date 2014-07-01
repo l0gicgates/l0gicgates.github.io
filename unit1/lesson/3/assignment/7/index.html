@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlibs</title>
+     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	 <link href="styles.css" rel="stylesheet">
+</head>
+<body ng-controller="MyCtrl">
+	<!-- Begin page content -->
+    <div class="container">
+    	 <div class="row row-centered" align="center">
+	    
+			
+			<div class="col-xs-3 col-centered"> </div>
+
+			<div class="col-xs-6 col-centered">
+				<div class="page-header">
+	  				<h1>Waitstaff Calculator </h1>
+				</div>
+			</div>
+	      
+	
+			<div class="col-xs-3 col-centered"> </div>
+
+
+		</div>
+
+
+	 <br> <br>
+		 <div class="row">
+			<div class="col-xs-2 col-centered" > 
+
+				
+
+			</div>
+
+
+
+
+			<div class="col-xs-4 col-centered" align="right"> 
+			<form name="loginform" novalidate ng-submit="login.submit(loginForm)" class="css-form">
+				<p class="lead"> Enter the Meal Details </p>
+		
+				 <div class="controls form-inline"  >
+					 <label for="inputKey">Base Meal Price: $ </label> 
+					 <input type="number" class="form-control" ng-model="user.baseMealPrice" placeholder="0.00" required >
+				</div>
+				<br>
+				<div class="controls form-inline">
+					<label for="inputKey">Tax Rate: % </label> 
+					 <input type="number" class="form-control" ng-model="user.taxRate" placeholder="7" required>
+				</div>
+				<br>
+				<div class="controls form-inline">
+					 <label for="inputKey">Tip Percentage: % </label> 
+					 <input type="number" class="form-control" ng-model="user.tipPercentage" placeholder="20" required>
+				</div>
+
+				<br> <br> <br> <br> <br> <br> <br> 
+	
+
+				<div class="btn-group pull-right">
+					 <input class="btn btn-default pull-right" type="submit" value="Cancel">
+					 <input class="btn btn-default pull-right" type="submit" value="Submit">
+				</div>
+
+			
+
+		
+			</div>
+
+
+			<div class="col-xs-4 col-centered" align="right"> 
+
+				<p class="lead"> Customer Charges</p>
+
+				 <div class="controls form-inline"  >
+					 <label for="inputKey">Subtotal: </label> 
+					 <input type="text" class="form-control" placeholder="0.00" ng-model="subtotal" readonly>
+				</div>
+				<div class="controls form-inline">
+					<label for="inputKey">Tip: </label> 
+					 <input type="text" class="form-control" placeholder="0.00" ng-model="tip" readonly>
+				</div>
+				<hr>
+				<div class="controls form-inline">
+					 <label for="inputKey">Total: </label> 
+					 <input type="text" class="form-control" placeholder="0.00" ng-model="total" readonly>
+				</div>
+			
+				
+					<br> 
+					<p class="lead"> My Earnings Info</p> <hr>
+
+					 <div class="controls form-inline"  >
+						 <label for="inputKey">Tip Total: </label> 
+						 <input type="text" class="form-control" placeholder="0.00" ng-model="tipTotal"  readonly>
+					</div>
+					<div class="controls form-inline">
+						<label for="inputKey">Meal Count: </label> 
+						 <input type="text" class="form-control" placeholder="0.00"  ng-model="mealCount"readonly>
+					</div>
+					<hr>
+					<div class="controls form-inline">
+						 <label for="inputKey">Average Tip Per Meal: </label> 
+						 <input type="text" class="form-control" placeholder="0.00"  ng-model="averageTip" readonly>
+					</div>
+				</form>
+
+				
+			</div>
+
+			<div class="col-xs-2 col-centered"> 
+
+			
+
+			</div>
+
+		 </div>
+
+
+		<br> <br>
+
+	
+
+		 <input class="btn btn-default pull-right" type="submit" value="Reset">
+
+    </div>
+
+
+    <div id="footer">
+      <div class="container" align="center">
+     	<a href="http://www.thinkful.com/courses/ANG-001/unit/1/lesson/3/assignment/7">  Thinkful - Unit 1 - Lesson 3 - Assignment 7 </a>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+   
+   </body>
+
+
+
+  
+
+</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="madlibs.js"></script>
+</html>

@@ -33,7 +33,7 @@
 
 	      		<br> <br> <br>
 	      		
-				<div id="words" ng-hide="showButton()" ng-animate="'slide'" class="ng-hide" >	
+				<div id="words" ng-hide="showButton()"  >	
 
 		      	   <h2> Please provide the following words :</h2>
 		      	   <form name="loginform" novalidate ng-submit="login.submit(loginForm)" class="css-form">
@@ -72,7 +72,7 @@
 
 
     
-	      <div id="madLibsBody" ng-show="showButton()" ng-animate="'slide'" class="ng-hide" >
+	      <div id="madLibsBody" ng-show="showButton()">
 	      		<br> <br>
 		      	<p class="lead">{{ user.maleName }} was a {{user.jobTitle}} who loved technology. <br>
 		    		Although he loved parts of his job, he absolutely hate <br>
@@ -113,8 +113,6 @@
 
 </body>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-animate.js"></script>
-	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="madlibs.js"></script>

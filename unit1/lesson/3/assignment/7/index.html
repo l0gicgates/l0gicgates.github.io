@@ -100,16 +100,16 @@
 
 					 <div class="controls form-inline"  >
 						 <label for="inputKey">Tip Total: </label> 
-						 <input type="text" class="form-control" placeholder="0.00" ng-model="tipTotal"  readonly>
+						 <input type="number" class="form-control" placeholder="0.00" ng-model="tipTotal"  ng-init="0.00" readonly>
 					</div>
 					<div class="controls form-inline">
 						<label for="inputKey">Meal Count: </label> 
-						 <input type="text" class="form-control" placeholder="0.00"  ng-model="mealCount"readonly>
+						 <input type="number" class="form-control" placeholder="0.00"  ng-model="mealCount" ng-init="0.00" readonly>
 					</div>
 					<hr>
 					<div class="controls form-inline">
 						 <label for="inputKey">Average Tip Per Meal: </label> 
-						 <input type="text" class="form-control" placeholder="0.00"  ng-model="averageTip" readonly>
+						 <input type="number" class="form-control" placeholder="0.00"  ng-model="averageTip" ng-init="0.00" readonly>
 					</div>
 				</form>
 

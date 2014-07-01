@@ -3,7 +3,11 @@ angular.module('myApp',[])
   .controller('MyCtrl', function(VERSION, $scope) {
     $scope.version = VERSION;
 
+
  	$scope.master = {};
+  $scope.tipTotal = 0;
+  $scope.mealCount=0;
+  $scope.averageTip= 0;
  	$scope.reset = function() {
       $scope.user = angular.copy($scope.master);
       $scope.startOver = 'true';
@@ -20,7 +24,7 @@ angular.module('myApp',[])
            
            $scope.subtotal=user.baseMealPrice*(1+(user.taxRate/100));
            $scope.tip=user.baseMealPrice*(user.tipPercentage/100);
-           $scope.tipTotal = $scope.tip + $scope.tipTotal 
+           $scope.tipTotal = $scope.tip +  $scope.tipTotal;
            $scope.mealCount++;
            $scope.averageTip= $scope.tipTotal/$scope.mealCount;
            $scope.total= $scope.subtotal +$scope.tip;

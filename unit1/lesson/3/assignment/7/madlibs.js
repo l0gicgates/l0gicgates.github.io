@@ -10,6 +10,7 @@ angular.module('myApp',[])
   $scope.averageTip= 0;
  	$scope.reset = function() {
       $scope.user = angular.copy($scope.master);
+      $scope.results = angular.copy($scope.master);
       $scope.startOver = 'true';
     };
 

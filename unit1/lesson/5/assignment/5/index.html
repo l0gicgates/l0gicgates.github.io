@@ -13,7 +13,7 @@
 </head>
 <body ng-controller="Example">
 
-<div class="container">
+
     <div class="container">
       <div class="row">
         <div class="col-md-12"><h1>Instagram Searcher</h1></div>
@@ -27,12 +27,13 @@
 		</form>
 
       </div>
-        <div class="row">
+      <div class="row">
 		<div ng-repeat="p in pics | orderBy:orderBy" class="col-md-2">
 			<a href="{{p.link}}" target="_blank"><img ng-src="{{p.images.low_resolution.url}}" class="img-responsive thumbnail" title="{{p.caption.text}}"></a>
         </div>
+       </div>
     </div>
-  </div>
+
   
  
 </body>

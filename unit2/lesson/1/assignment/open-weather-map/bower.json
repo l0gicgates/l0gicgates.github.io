@@ -1,0 +1,20 @@
+{
+  "name": "open-weather-map",
+  "version": "0.0.0",
+  "homepage": "https://github.com/l0gicgates/l0gicgates.github.io",
+  "authors": [
+    "Juan <jualin289@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.20",
+    "angular-route": "~1.2.20"
+  }
+}

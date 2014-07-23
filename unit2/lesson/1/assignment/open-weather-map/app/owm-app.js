@@ -10,7 +10,7 @@ angular.module('OWMApp', ['ngRoute'])
             templateUrl : './city.html',
             controller : 'CityCtrl'
         });
-]		.when('/cities', {
+		.when('/cities', {
     templateUrl : './city.html',
     controller : 'CityCtrl',
     resolve : {

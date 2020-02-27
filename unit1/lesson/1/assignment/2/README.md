@@ -1,2 +1,0 @@
-thinkful-angular
-================

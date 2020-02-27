@@ -15,6 +15,8 @@
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/animate/animate.css" rel="stylesheet">
+
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
@@ -45,10 +47,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#projects">PROJECTS <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">ABOUT</a>
+            <a class="nav-link" href="#projects">PROJECTS <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="#team">TEAM</a>
@@ -74,25 +76,25 @@
 
   
   <!-- About Firm -->
-  <section class="showcase" id="about">
+  <section class="showcase mt-5 module" id="about">
     <div class="container-fluid p-0">
-      <div class="row no-gutters">
+      <div class="row no-gutters module">
 
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/building1.png');"></div>
+        <div class="col-lg-6 order-lg-2 animated slideInRight text-white showcase-img" style="background-image: url('img/building1.png');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h3>Something about the firm</h3>
           <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed consectetur elit. Fusce efficitur nec nisi eu pellentesque. Duis malesuada. Duis sed consectetur elit.</p>
         </div>
       </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/building2.png');"></div>
+      <div class="row no-gutters module">
+        <div class="col-lg-6 text-white showcase-img animated slideInLeft" style="background-image: url('img/building2.png');"></div>
         <div class="col-lg-6 my-auto showcase-text">
           <h3>Maybe something else</h3>
           <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed consectetur elit. Fusce efficitur nec nisi eu pellentesque. Duis malesuada.</p>
         </div>
       </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/building3.png');"></div>
+      <div class="row no-gutters module">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img animated slideInRight" style="background-image: url('img/building3.png');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h3>One more &amp; more</h3>
           <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur nec nisi eu pellentesque. Duis sed consectetur elit. Fusce efficitur nec nisi eu pellentesque. Duis malesuada. Sit amet, consectetur adipiscing elit</p>
@@ -102,7 +104,7 @@
   </section>
 
 <!-- Projects -->
-<section class="features-icons bg-light " id="projects">
+<section class="features-icons bg-light module " id="projects">
     <div class="">
       <div class="row">
         <div class="col-12">
@@ -168,7 +170,7 @@
 
 
    <!-- Services -->
-   <section class="features-icons" id="services">
+   <section class="features-icons module" id="services">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
@@ -300,7 +302,7 @@
   </section>
 
   <!-- CONTACT US -->
-  <section class="bg-light mt-2 m-b-5" id="contact">
+  <section class="bg-light mt-2 m-b-5 module" id="contact">
     <!-- <div class="overlay"></div> -->
     <h4 class="mb-5 ml-3  pt-5 text-center">CONTACT US</h2>
     <div class="container">
@@ -390,5 +392,60 @@
         $('#projectMap').DataTable();
     } );
     </script>
+
+    <script>
+      (function($) {
+
+      /**
+      * Copyright 2012, Digital Fusion
+      * Licensed under the MIT license.
+      * http://teamdf.com/jquery-plugins/license/
+      *
+      * @author Sam Sehnert
+      * @desc A small plugin that checks whether elements are within
+      *     the user visible viewport of a web browser.
+      *     only accounts for vertical position, not horizontal.
+      */
+
+      $.fn.visible = function(partial) {
+        
+          var $t            = $(this),
+              $w            = $(window),
+              viewTop       = $w.scrollTop(),
+              viewBottom    = viewTop + $w.height(),
+              _top          = $t.offset().top,
+              _bottom       = _top + $t.height(),
+              compareTop    = partial === true ? _bottom : _top,
+              compareBottom = partial === true ? _top : _bottom;
+        
+        return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+      };
+        
+      })(jQuery);
+
+      var win = $(window);
+
+      var allMods = $(".module");
+
+      allMods.each(function(i, el) {
+      var el = $(el);
+      if (el.visible(true)) {
+        el.addClass("already-visible"); 
+      } 
+      });
+
+      win.scroll(function(event) {
+
+      allMods.each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+          el.addClass("come-in"); 
+        } 
+      });
+
+      });
+    </script>
+
 
 </html>

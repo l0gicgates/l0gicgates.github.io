@@ -1,12 +1,11 @@
-/*!
- * Start Bootstrap - Landing Page v5.0.7 (https://startbootstrap.com/template-overviews/landing-page)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
- */
+/* body {
+} */
 
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
 }
+
 
 h1,
 h2,
@@ -16,6 +15,22 @@ h5,
 h6 {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
+}
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 1.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 1.0s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
 }
 
 header.masthead {
@@ -43,7 +58,9 @@ header.masthead {
 }
 
 .navbar-brand {
-  font-size: 2.25rem;
+  /* font-size: 2.25rem; */
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  /* line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
   /* text-decoration: underline; */
 }
 

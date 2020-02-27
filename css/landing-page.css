@@ -103,9 +103,9 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
   background-color: #f5f5f5;
 }
 
-.footer-icon {
-  color:white;
-  background-color: black;
+.footer-logo {
+  height: 23px;
+  margin-bottom: 5px;
 }
 
 header.masthead .overlay {

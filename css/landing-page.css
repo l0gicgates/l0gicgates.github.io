@@ -43,7 +43,7 @@ header.masthead {
 }
 
 .home-logo {
-  width: 80%;
+  width:80%;
 }
 
 .circle-icon {
@@ -144,6 +144,10 @@ header.masthead h1 {
 @media (min-width: 768px) {
   .showcase .showcase-text {
     padding: 7rem;
+  }
+
+  .home-logo {
+    width:30%;
   }
 }
 

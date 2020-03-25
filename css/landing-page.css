@@ -127,7 +127,7 @@ header.masthead {
 }
 
 .home-logo {
-  width:25%;
+  width:50%;
 }
 
 .circle-icon {
@@ -216,6 +216,10 @@ header.masthead h1 {
   }
   header.masthead h1 {
     font-size: 3rem;
+  }
+
+  .home-logo {
+    width:25%;
   }
 
   

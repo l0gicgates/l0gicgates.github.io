@@ -127,7 +127,7 @@ header.masthead {
 }
 
 .home-logo {
-  width:80%;
+  width:25%;
 }
 
 .circle-icon {
@@ -176,6 +176,9 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
   content: none;
 }
 
+.siteName {
+  font-size:4vw;
+}
 
 .footer {
   /* position: fixed;
@@ -262,9 +265,9 @@ header.masthead h1 {
     padding: 7rem;
   }
 
-  .home-logo {
+  /* .home-logo {
     width:30%;
-  }
+  } */
 
   .banner-home {
     /* background-image: url("../img/building4.jpg"); */

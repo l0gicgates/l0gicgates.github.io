@@ -27,7 +27,7 @@
 </head>
 
 <body id="dark">
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light static-top">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top static-top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>  
@@ -56,11 +56,26 @@
 
   <!-- Masthead -->
   <header class=" text-white text-center">
-    <div class="row">
-      <div class="col-12">
-        <img class="home-logo img-fluid" src="img/bg-masthead.jpg" alt="">
-      </div>
-    </div>
+      
+      <div class="banner-home overlay">
+          <div class="overlay">
+              <div class="centered-table">
+                  <div class="content-table">
+                    <img style="opacity:40" class="logo fadeinA" width="400" height="200" src="img/logo-white.png">
+                     <h1 class="siteName font-weight-light">Engineering Redesigned</h1> 
+                    <div class="container-fluid">
+                    <a href="/journeys" class=" learn-more btn btn-large fadeinC trans3">Learn More</a>
+                    <br>
+                    <br>
+                    <!-- <img class="home-arrow action fadeinC trans3" src="/img/gal-arrow.png"> -->
+                    </div>
+      
+                  </div>
+                </div>
+          </div>
+          
+        </div>
+      
   </header>
 
   
@@ -551,4 +566,33 @@
   <script src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js'></script>
   <script src="js/map.js"></script>
   <script src="js/visible.js"></script>
+
+  <script>
+  $(document).scroll(function () {
+    var $nav = $(".navbar");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    console.log("scrolling");
+  });
+
+  var banner = $('.banner-home');
+    var backgrounds = [
+      'url(../img/building4.jpg)', 
+      // 'url(../img/building4.jpg)', 
+      'url(../img/miami2.jpeg)', 
+      'url(../img/california.jpeg)', 
+      // 'url(../img/los-angeles.jpg)', 
+
+      'url(../img/las-vegas2.jpg)'];
+    var current = 0;
+
+    function nextBackground() {
+      banner.css(
+            'background-image',
+        backgrounds[current = ++current % backgrounds.length]);
+
+        setTimeout(nextBackground, 7000);
+    }
+    setTimeout(nextBackground,7000);
+    banner.css('background-image', backgrounds[0]);
+  </script>
 </html>

@@ -164,6 +164,11 @@ header.masthead {
   display: none;
 }
 
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
 div.dataTables_wrapper div.dataTables_filter {
   display: none;
 }

@@ -46,6 +46,11 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#services">SERVICES
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#team">TEAM</a>
         </li>
         <li class="nav-item">
@@ -410,6 +415,8 @@
   <!-- Services -->
   <section class="features-icons module" id="services">
     <div class="container-fluid">
+        <h4 class="mb-5 ml-3 mt-0 text-center">SERVICES OFFERED</h2>
+
       <div class="row">
         <div class="col-lg-4 col-md-6">
           <div class="features-icons-item  mx-auto ">
@@ -580,14 +587,10 @@
   <script src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js'></script>
   <script src="js/map.js"></script>
   <script src="js/visible.js"></script>
+  <script src="js/navbar.js"></script>
+
 
   <script>
-    $(document).scroll(function () {
-      var $nav = $(".navbar");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-      console.log("scrolling");
-    });
-
     var banner = $('.banner-home');
     var backgrounds = [
       'url(../img/building4.jpg)',

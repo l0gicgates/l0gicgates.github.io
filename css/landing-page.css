@@ -154,13 +154,17 @@ header.masthead {
 
 #map { 
  width: 80%;
- height: 55vh;
+ height: 45vh;
 }
 
 #projectMap_length {
   display: none;
 }
 #projectMap_info {
+  display: none;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
   display: none;
 }
 

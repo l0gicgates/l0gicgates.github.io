@@ -164,6 +164,24 @@ header.masthead {
   display: none;
 }
 
+.marker {
+  background-image: url('../img/marker-blue.png');
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
 
 
 table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before {
@@ -320,6 +338,7 @@ header.masthead h1 {
 .people .people-item img {
   max-width: 12rem;
   box-shadow: 0px 5px 5px 0px #adb5bd;
+  filter: grayscale(100%);
 }
 
 .call-to-action {

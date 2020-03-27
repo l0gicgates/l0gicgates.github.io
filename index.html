@@ -610,17 +610,17 @@
 
       // 'url(../img/las-vegas2.jpg)'
     ];
-    var current = 0;
+    // var current = 0;
 
-    function nextBackground() {
-      banner.css(
-        'background-image',
-        backgrounds[current = ++current % backgrounds.length]);
+    // function nextBackground() {
+    //   banner.css(
+    //     'background-image',
+    //     backgrounds[current = ++current % backgrounds.length]);
 
-      setTimeout(nextBackground, 7000);
-    }
-    setTimeout(nextBackground, 7000);
-    banner.css('background-image', backgrounds[0]);
+    //   setTimeout(nextBackground, 7000);
+    // }
+    // setTimeout(nextBackground, 7000);
+    banner.css('background-image', backgrounds[Math.floor(Math.random() * Math.floor(backgrounds.length))]);
   </script>
 
 </html>

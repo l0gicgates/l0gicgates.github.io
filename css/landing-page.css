@@ -30,7 +30,7 @@ body {
   /* font-family: FuturaStd-Heavy; */
   font-weight: 400;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 15px;
   color: #fff;
   border: 1px solid #fff;
   margin: 20px;
@@ -92,7 +92,7 @@ body {
   width: 100%;
   min-height: 650px;
   margin-top: -70px;
-  transition: 2s;
+  /* transition: 2s; */
 }
 
 h1,

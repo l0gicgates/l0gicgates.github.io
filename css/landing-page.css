@@ -208,7 +208,11 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 }
 
 .siteName {
-  font-size:4vw;
+  font-weight: 300;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin: 20px;
 }
 
 .footer {

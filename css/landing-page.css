@@ -22,8 +22,8 @@ body {
 } */
 
 .learn-more{
-  color:black;
-  background-color: white;
+  /* color:black; */
+  background-color: transparent;
   border-radius: 0;
   /* letter-spacing: .2em; */
   font-size: 13px;
@@ -31,8 +31,8 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   padding: 20px;
-  /* color: #fff; */
-  border: 2px solid #fff;
+  color: #fff;
+  border: 1px solid #fff;
   margin: 20px;
   text-shadow: none;
 }

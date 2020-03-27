@@ -6,6 +6,10 @@ body {
   
 }
 
+.portfolio > [class^="col-"] {
+  padding: 0;
+}
+
 .centered-table {
   display: table;
   width: 100%;

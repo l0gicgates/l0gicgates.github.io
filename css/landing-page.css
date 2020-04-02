@@ -355,7 +355,7 @@ header.masthead h1 {
 .people .people-item img {
   max-width: 12rem;
   box-shadow: 0px 5px 5px 0px #adb5bd;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .call-to-action {

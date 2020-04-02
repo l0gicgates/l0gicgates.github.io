@@ -1,6 +1,6 @@
 (function initMap() {
     $(document).ready(function () {
-        $('#projectMap').DataTable({"paging": false, "scrollX": true, "scrollY": "250px"} );
+        $('#projectMap').DataTable({"scrollX": true, "pageLength": 5} );
 
 
         mapboxgl.accessToken = 'pk.eyJ1IjoianVhbGluMjg5IiwiYSI6ImNrNzNuYnV3ZTBkMmkzbHFxcjNlNnhzZnMifQ.dOEEFE00vYryzLt-Go6W6A';

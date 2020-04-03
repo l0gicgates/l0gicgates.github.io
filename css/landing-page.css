@@ -10,6 +10,11 @@ body {
   padding: 0;
 }
 
+.gray {
+  color: gray;
+  font-size: 1.0rem;
+}
+
 .centered-table {
   display: table;
   width: 100%;
@@ -209,7 +214,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 
 .siteName {
   font-weight: 300;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin: 20px;
@@ -255,6 +260,10 @@ header.masthead h1 {
 
   .home-logo {
     width:25%;
+  }
+
+  .siteName {
+      font-size: 2.5vw;
   }
 
   

@@ -95,6 +95,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
+  background-attachment: fixed;
   min-height: 650px;
   margin-top: -70px;
   /* transition: 2s; */
@@ -302,6 +303,11 @@ header.masthead h1 {
   color: rgba(0,0,0,.9) !important;
 }
 
+.people-item:hover {
+  text-decoration: none;
+  color:#000000a6 !important;
+}
+
 .navbar.scrolled {
   background-color: #fff !important;
   transition: background-color 200ms linear;
@@ -325,6 +331,7 @@ header.masthead h1 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 650px;
     /* margin-top: -65px; */
@@ -359,6 +366,7 @@ header.masthead h1 {
 
 .people .people-item {
   max-width: 18rem;
+  color:black;
 }
 
 .people .people-item img {

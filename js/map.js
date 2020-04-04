@@ -148,7 +148,7 @@
                     type: 'Feature',
                     geometry: {
                         type: 'Point',
-                        coordinates: [-84.253334, 30.455000]
+                        coordinates: [-82.452606, 27.964157]
                     },
                     properties: {
                         title: 'Tampa, FL',
@@ -222,7 +222,7 @@
                     .setHTML('<h3>' + title + '</h3><p style="text-align:left">' + description + '</p>')
                     .addTo(map);
 
-                    map.flyTo({ center: e.features[0].geometry.coordinates, zoom: 6, pitch: 60 });
+                    map.flyTo({ center: e.features[0].geometry.coordinates, zoom: 6, pitch: 30 });
 
 
             });

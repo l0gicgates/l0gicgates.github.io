@@ -95,7 +95,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   min-height: 650px;
   margin-top: -70px;
   /* transition: 2s; */

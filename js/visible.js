@@ -16,6 +16,15 @@
     *     only accounts for vertical position, not horizontal.
     */
 
+   var navButton = document.getElementById('navbarBtn');
+
+   navButton.onclick = function() {
+    console.log("adding scrolled to navbar");
+    var navbar = document.getElementById('navbar');
+
+    navbar.classList.add('scrolled');
+   }
+
     $.fn.visible = function(partial) {
       
         var $t            = $(this),

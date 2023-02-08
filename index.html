@@ -4,14 +4,21 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no, shrink-to-fit=no"
-  />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no, shrink-to-fit=no"/> -->
   <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:title" content="Muniz Consulting Engineers">
+	<meta name="twitter:description" content="Muniz Consulting Engineers is driven to provide a higher standard of service & design excellence to our clients. After years of designing and managing architecturally challenging projects with well respected firms, 
+  we’ve arrived at the conclusion that the process can be improved.">
+  <meta property="og:image" content="https://www.sms-ce.com/img/twitter-card.png" />
+	<meta name="description" content="Muniz Consulting Engineers is driven to provide a higher standard of service & design excellence to our clients. After years of designing and managing architecturally challenging projects with well respected firms, 
+  we’ve arrived at the conclusion that the process can be improved.">
+  <meta name="author" content="Muniz · Consulting Engineers">
 
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Muniz Consulting Engineers</title>
+  <!-- <base href="../"> -->
 
-  <title>Stanford Muniz + Schnepple</title>
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -28,12 +35,13 @@
 </head>
 
 <body id="dark">
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top static-top">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-      aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top static-top" id="navbar">
+    <button class="navbar-toggler" id="navbarBtn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">STANFORD MUNIZ <span >+</span> SCHNEPPLE</a>
+    <a class="navbar-brand" href="#">MUNIZ
+      <span></span> CONSULTING ENGINEERS</a>
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
@@ -62,7 +70,6 @@
       </ul>
     </div>
   </nav>
-
   <!-- Masthead -->
   <header class=" text-white text-center">
 
@@ -70,10 +77,12 @@
       <div class="overlay">
         <div class="centered-table">
           <div class="content-table">
-            <img style="opacity:40" class="home-logo img-fluid fadeinA" src="img/logo-blue.png">
-            <h1 class="siteName font-weight-light">Engineering Redesigned</h1>
+            <img style="opacity:40" class="home-logo-s img-fluid fadeinA" src="img/logo-muniz-white.png">
+            <!-- <h1 class="siteName font-weight-light d-none d-md-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Florida &nbsp;</h1> -->
             <div class="container-fluid">
-              <a href="#about" class=" learn-more btn btn-large fadeinC trans3">Learn More</a>
+              <a href="#about" class=" learn-more btn btn-large fadeinC trans3">
+                <i class="fa fa-chevron-down"> </i>
+              </a>
               <br>
               <br>
               <!-- <img class="home-arrow action fadeinC trans3" src="/img/gal-arrow.png"> -->
@@ -89,361 +98,146 @@
 
 
   <!-- About Firm -->
-  <section class="showcase mt-5 module" id="about">
+  <section class="showcase module" id="about">
     <div class="container-fluid p-0">
-      <div class="row no-gutters module">
 
-        <div class="col-lg-6 order-lg-2 animated slideInRight text-white showcase-img" style="background-image: url('img/aboutMiami.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h3>“If I had nine hours to chop down a tree, I’d spend the first six sharpening my axe.”
-            <span class="gray">
-              <br>Abraham Lincoln </span>
-          </h3>
-          <p class="lead mb-0">By taking advantage of modern software workflows we create efficiencies that allow us to focus our time on what
-            matters...finding the ideal solutions for your vision, coordination, and adapting to demanding project schedules;
-            all while maintaining our uncompromising standards for our deliverables.
+      <div class="row module already-visible">
+
+        <div class="col-lg-10 mpt-3 my-auto showcase-text">
+            <h3>Designing Tomorrow. Today </h3>
+            <p class="lead mb-0"> After years of designing and managing architecturally challenging projects with well respected firms, 
+              we’ve arrived at the conclusion that the process can be improved. Muniz Consulting Engineers is driven to provide a higher 
+              standard of service & design excellence to our clients.
+          </p>
+        </div>
+        <!-- <div class="col-lg-4 order-lg-1 animated slideInRight text-white showcase-img" style="background-image: url('img/aboutMiami.jpg');"></div> -->
+
+      </div>
+
+      <div class="row no-gutters mb-3">
+        <div class="col-md-9">
+          <img class="img img-fluid" src="img/projects/aquablu.jpg" alt="">
+          <p class=" ml-3"> <strong>     *Aquablu </strong>
+            <br>
+            <sub> Fort Lauderdale, FL </sub>
+          </p>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+
+
+      </div>
+      <!-- <div class="row module bg-light ">
+
+          <div class="col-lg-10 mpt-3 my-auto showcase-text">
+            <h3>Realize Your Vision </h3>
+            <p class="lead mb-0">We believe that architecture and structural engineering serve to advance each other, 
+              continuously reinventing what is possible. Our commitment is to innovative design that respects your intent, 
+              and assurance about possibilities regarding cost, and constructability.
+            </p>
+          </div>
+  
+        </div> -->
+  
+        <div class="row  bg-light no-gutters">
+          
+          <div class="col-md-5 mpt-3 my-auto showcase-text">
+            <h3>Realize Your Vision </h3>
+            <p class="lead mb-5">We believe that architecture and structural engineering serve to advance each other, 
+              continuously reinventing what is possible. Our commitment is to innovative design that respects your intent, 
+              and assurance about possibilities regarding cost, and constructability.
+            </p>
+          </div>
+
+          <div class="col-md-7">
+            <img class="img img-fluid" src="img/projects/southferry.jpg" alt="">
+            <p class=" ml-3"> <strong>     *NY South Ferry </strong>
+              <br>
+              <sub> New York, NY </sub>
+            </p>
+          </div>
+          
+          
+  
+  
+        </div>
+      <div class="row no-gutters">
+          
+        <div class="col-md-5 mpt-3 my-auto showcase-text order-md-2">
+          <h3 class="">Maximize Your Value</h3>
+            <p class="lead mb-0 ">By taking advantage of modern software workflows we create time that allows us to focus on what matters... finding
+                the ideal solutions for your vision, coordination, and meeting demanding project schedules; all while maintaining
+                our uncompromising standards for our deliverables.
+              </p>
+          </div>
+          <div class="col-md-7 order-md-1">
+            <img class="img img-fluid" src="img/projects/FairholmeMuseum.jpg" alt="">
+            <p class="ml-2"><strong>  *Fairholme Museum </strong>
+              <br>
+              <sub class=""> Miami, FL </sub>
+            </p>
+          </div>
+         
+          
+  
+  
+        </div>
+      <div class="row no-gutters module">
+        <!-- <div class="col-lg-7 order-lg-1 text-white showcase-img animated slideInRight">
+          <img src="img/aboutLA.jpg" class="img img-fluid" alt="">
+        </div> -->
+        <div class="col-lg-12  my-auto showcase-text bg-light">
+          <h3>Redefine Your Expectations</h3>
+          <p class="lead mb-0">Our expectation of excellence isn’t limited to only our technical abilities and deliverables, but the service that
+            we provide our clients. We’re committed to providing service that exceeds industry expectations. When you reach
+            out we WILL respond.
+
           </p>
         </div>
       </div>
-      <div class="row no-gutters module">
-        <div class="col-lg-6 text-white showcase-img animated slideInLeft" style="background-image: url('img/aboutVegas.jpg');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <h3>“Design is where science and art break even.”
-            <span class="gray">
-              <br> Mieke Gerritzen </span>
-          </h3>
-          <p class="lead mb-0">We believe that architecture and structural engineering serve to advance each other, continuously reinventing what
-            is possible. Our commitment to our clients is to innovative structural design that respects the architectural
-            intent, and honesty about the structural possibilities from aesthetic, cost, and constructability stand points.
-          </p>
+      <div class="row no-gutters mb-3">
+          <div class="col-md-8">
+            <img class="img img-fluid" src="img/projects/UFC_HQ.jpg" alt="">
+            <p class=" ml-3"> <strong>     *UFC Headquarters </strong>
+              <br>
+              <sub> Las Vegas, NV </sub>
+            </p>
+          </div>
+          <div class="col-md-4">
+  
+          </div>
+  
+  
         </div>
-      </div>
-      <div class="row no-gutters module">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img animated slideInRight" style="background-image: url('img/aboutLA.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h3>“We are what we repeatedly do. Excellence then, is not an act, but a habit.”
-            <span class="gray">
-              <br> Aristotle </span>
-          </h3>
-          <p class="lead mb-0">Our expectation of excellence isn’t limited to only our technical abilities and deliverables, but also the service
-            that we provide our clients. We’re committed to providing service that not only meets, but exceeds industry expectations.
-            When you reach out to us we WILL respond.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="features-icons bg-light module " id="projects">
-    <div class="">
-      <div class="row">
-        <div class="col-12">
-          <h4 class="mb-5 ml-3 text-center">PROJECTS</h2>
-            <div align="center">
-              <div id='map'></div>
-              <button id='resizeMap' style="position: absolute; top: 80px;left: 50px;" class='btn btn-info'> Show All</button>
-            </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Projects Grid -->
-    <div class="container-fluid">
-      <div class="row  mt-5">
-        <div class="col-12">
-          <table id="projectMap" class="table font-weight-light" style="width:99%">
-            <thead>
-              <tr>
-                <th>
-                  <u> Title </u>
-                </th>
-                <th>
-                  <u>Location </u>
-                </th>
-                <th>
-                  <u>Year </u>
-                </th>
-                <th>
-                  <u>Size</u>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Crown Resort Perth</td>
-                <td>Perth, Australia</td>
-                <td>2016</td>
-                <td>1,100,000 square feet</td>
-              </tr>
-              <tr>
-                <td>UFC Headquarters</td>
-                <td>Las Vegas, NV</td>
-                <td>2016</td>
-                <td>184,000 square feet</td>
-              </tr>
-              <tr>
-                <td>Audi Field (Connection Design)</td>
-                <td>Washington D.C.</td>
-                <td>2017</td>
-                <td> 20,000 Capacity</td>
-              </tr>
-              <tr>
-                <td>Jackson Healthcare West Campus</td>
-                <td>Doral, FL</td>
-                <td>2020</td>
-                <td>275,000 square feet</td>
-              </tr>
-              <tr>
-                <td>NYC Southferry Subway Station</td>
-                <td>New York, NY</td>
-                <td>2018</td>
-                <td> </td>
-              </tr>
-              <tr>
-                <td>NYNJ Path Harrsion Station Platform</td>
-                <td>Harrison, NJ</td>
-                <td>2018</td>
-                <td> </td>
-              </tr>
-              <tr>
-                <td>LAX terminal 3 Satellite (Delta)</td>
-                <td>Los Angeles, CA</td>
-                <td>
-                  <2028/td>
-                    <td> </td>
-              </tr>
-              <tr>
-                <td>LAX terminal 3 Concourse/Connector (Delta)</td>
-                <td>Los Angeles, CA</td>
-                <td>2028</td>
-                <td> </td>
-              </tr>
-              <tr>
-                <td>LAX Terminal 4 (American)</td>
-                <td>Los Angeles, CA</td>
-                <td>
-                  <2028/td>
-                    <td> </td>
-              </tr>
-              <tr>
-                <td>Miami World Center Luma Amentities Structure</td>
-                <td>Miami, FL</td>
-                <td>
-                  <2022/td>
-                    <td> 48,000 square feet</td>
-              </tr>
-              <tr>
-                <td>Fairholme Museum</td>
-                <td>Miami, FL</td>
-                <td>2022</td>
-                <td>30,000 square feet</td>
-              </tr>
-              <tr>
-                <td>Curry Public Library Addition</td>
-                <td>Gold Beach, OR</td>
-                <td>2017</td>
-                <td>2,410 square feet</td>
-              </tr>
-              <tr>
-                <td>North Bend High School Gym</td>
-                <td>North Bend, OR</td>
-                <td>2020</td>
-                <td> </td>
-              </tr>
-              <tr>
-                <td>L and L Hostel</td>
-                <td>Portland, OR</td>
-                <td>2020</td>
-                <td> 35,000 square feet</td>
-              </tr>
-              <tr>
-                <td>Matanky Floating House</td>
-                <td>St Helens, OR</td>
-                <td>2016</td>
-                <td>4,500 square feet</td>
-              </tr>
-              <tr>
-                <td>Dement Floating House</td>
-                <td>Portland, OR</td>
-                <td>2016</td>
-                <td>4000 square feet</td>
-              </tr>
-              <tr>
-                <td>Florence City Hall Addition</td>
-                <td>Florence, OR</td>
-                <td>2018</td>
-                <td>2,400 square feet</td>
-              </tr>
-              <tr>
-                <td>Hotel Chamberlain</td>
-                <td>Portland, OR</td>
-                <td>2020</td>
-                <td>74,780 square feet</td>
-              </tr>
-              <tr>
-                <td>Jupiter Hotel</td>
-                <td>Portland, OR</td>
-                <td>2018</td>
-                <td>41,355 square feet</td>
-              </tr>
-              <tr>
-                <td>Seminole Boosters Inc - Champions Hall</td>
-                <td>Tallahassee, FL</td>
-                <td>2014</td>
-                <td> 92,000 square feet</td>
-              </tr>
-              <tr>
-                <td>Doak Campbell Stadium - Structural Condition Assesment</td>
-                <td>Tallahassee, FL</td>
-                <td>2014</td>
-                <td> </td>
-              </tr>
-              <tr>
-                <td>Brickell City Center North West Block Connection Design</td>
-                <td>Miami, FL</td>
-                <td>2016</td>
-                <td>1B+ square feet</td>
-              </tr>
-              <tr>
-                <td>Donald L. Tucker Center - Facility Upgrades</td>
-                <td>Tallahassee, FL</td>
-                <td>2015</td>
-                <td> </td>
-              </tr>
-              <tr>
-                <td>Doak Campbell Stadium - South End Zone Renovations</td>
-                <td>Tallahassee, FL</td>
-                <td>2016</td>
-                <td> </td>
-              </tr>
-              <tr>
-                <td>Collegetown Phase II</td>
-                <td>Tallahassee, FL</td>
-                <td>2016</td>
-                <td> 150,000 square feet</td>
-              </tr>
-              <tr>
-                <td>FSU Housing II</td>
-                <td>Tallahassee, FL</td>
-                <td>2017</td>
-                <td>217,800 square feet</td>
-              </tr>
-              <tr>
-                <td>Doral Police Facility</td>
-                <td>Doral, FL</td>
-                <td>2016</td>
-                <td>36,282 square feet</td>
-              </tr>
-              <tr>
-                <td>Delray Ipic Theater and Office</td>
-                <td>Delray Beach, FL.</td>
-                <td>2019</td>
-                <td>80,000 square feet</td>
-              </tr>
-              <tr>
-                <td>Miami Cancer Insitute</td>
-                <td>Miami, FL.</td>
-                <td>2017</td>
-                <td>370,000 square feet</td>
-              </tr>
-              <tr>
-                <td>PBSO Evidence Facility</td>
-                <td>West Palm Beach, FL.</td>
-                <td></td>
-                <td> </td>
-              </tr>
-              <tr>
-                <td>Florida Oceanographic Society Marine Center</td>
-                <td>Stuart, FL.</td>
-                <td></td>
-                <td> </td>
-              </tr>
-              <tr>
-                <td>Aquablu </td>
-                <td>Fort Lauderdale, FL.</td>
-                <td>2018</td>
-                <td> </td>
-              </tr>
-              <tr>
-                <td>Canopy Hotel</td>
-                <td>West Palm Beach, FL.</td>
-                <td>2020</td>
-                <td>350,000 square feet</td>
-              </tr>
-              <tr>
-                <td>WPB Spring Training Facility</td>
-                <td>West Palm Beach, FL.</td>
-                <td>2017</td>
-                <td> </td>
-              </tr>
-              <tr>
-                <td>Riviera Country Club</td>
-                <td>Coral Gables, FL</td>
-                <td>2019</td>
-                <td>60,000 square feet</td>
-              </tr>
-              <tr>
-                <td>Publix Channel Club</td>
-                <td>Tampa, FL.</td>
-                <td>2019</td>
-                <td>37,600 square feet</td>
-              </tr>
-              <tr>
-                <td>Vista Clara </td>
-                <td>Deerfield Beach, FL.</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Baptist Hospital Clinical Chasis Expansion</td>
-                <td>Miami, FL.</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>UM Frost</td>
-                <td>Miami, FL.</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>St. Peters Church</td>
-                <td>Key Largo, FL</td>
-                <td>2020</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>ISTF Westlake</td>
-                <td>Westlake, FL.</td>
-                <td>2021</td>
-                <td>553,000 square feet</td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
-      </div>
     </div>
   </section>
 
 
   <!-- Services -->
-  <section class="features-icons module" id="services">
+  <section class="features-icons module bg-light" id="services">
     <div class="container-fluid">
       <h4 class="mb-5 ml-3 mt-0 text-center">SERVICES OFFERED</h2>
 
         <div class="row">
-          
           <div class="col-lg-4 col-md-6">
-            <div class="features-icons-item mx-auto ">
-              <h4>Value Engineering</h4>
+            <div class="features-icons-item  mx-auto ">
+              <h4>Structural Design</h4>
+              <p class="lead mb-5">SM+S offers a full suite of Structural Engineering Design Services including New Building Design, Structural
+                Retrofitting, Building Expansions, and Tenant Improvements in both the Commercial, Industrial and Residential
+                sectors.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="features-icons-item  mx-auto ">
+              <h4>Peer Reviews</h4>
               <p class="lead mb-5">
-                SM+S takes the peer review process a step further by offering a complete Value Engineering service. Utilizing our knowledge
-                earned from 30+ years of combined experience in the industry, SM+S will identify areas in the construction
-                documents where there reductions in the project construction cost can be realized. This is achieved in a
-                variety of ways from optimizing engineering designs, alternate framing solutions that save in construction
-                materials and scheduling, and more.
+                Peer Reviews serve as valuable checks-and-balances, benefiting both the Owner and Engineer of Record. Our service entails
+                a complete evaluation of the construction documents and structural design to ensure that both meet the desired
+                design criteria and requirements of the governing building codes. Items resolved through the peer review
+                process often result in project savings, both time and cost, by eliminating design issues that would otherwise
+                not be discovered until the plan check process or construction.
               </p>
             </div>
           </div>
@@ -452,106 +246,95 @@
               <h4>Feasibility Studies</h4>
               <p class="lead mb-5">
                 Feasibility Study services are performed early on in a project’s design process. This service provides the information our
-                clients require for determining whether or not a project, or portion(s) of a project, are financially and
-                practically feasible. Before the project is advanced into design, a feasibility study will provide valuable
-                insight in deciding if the project vision is worth pursuing or if an alternate approach or system will be
-                better suited for the clients' needs.
+                clients require to determine whether or not a project, or portion(s) of a project, are financially and practically
+                feasible. Before the project is advanced into design, our feasibility study will provide valuable insight
+                in deciding if the project vision is worth pursuing, or if an alternate approach or system would be better
+                suited for the clients' needs.
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="features-icons-item  mx-auto ">
-              <h4>Peer Reviews</h4>
-              <p class="lead mb-5">
-                Peer Reviews serve as a valuable checks-and-balances assurance offered to the client that are a benefit to both Owner and
-                Engineer of Record. This service entails a complete evaluation of the construction documents to ensure the
-                building structure is adequate and meets all pertinent requirements of the governing building codes. Items
-                resolved through the peer review process often result in savings to the project in both time and cost by
-                eliminating otherwise unforeseen design errors that later arise during construction.
 
-              </p>
-            </div>
-          </div>
           <div class="col-lg-4 col-md-6">
-            <div class="features-icons-item  mx-auto ">
-              <h4>Structural Design</h4>
-              <p class="lead mb-5">SM+S offers a full suite of Structural Engineering Design Services that includes but is not limited to New
-                Building Design, Structural Retrofitting, Building Expansions, and Tenant Improvements in both the Commercial
-                and Residential sectors.
+            <div class="features-icons-item mx-auto ">
+              <h4>Value Engineering</h4>
+              <p class="lead mb-5">
+                SM+S takes the peer review process a step further by offering a complete Value Engineering service. Utilizing our knowledge
+                acquired from 30+ years of combined experience in the industry, SM+S will identify areas in the construction
+                documents where project savings can be realized. This is achieved in a variety of ways including optimization of engineering 
+                designs and alternate framing solutions that save in construction materials and scheduling
               </p>
             </div>
           </div>
+
+
           <div class="col-lg-4 col-md-6">
             <div class="features-icons-item  mx-auto ">
               <h4>Condition Assessments</h4>
               <p class="lead mb-5">
-                Condition assessments are often a vital step in the process of building acquisitions, repurposing, modifications and expansions.
-                This service provides our client with a thorough evaluation of the property, outlining the current condition
-                of the structure and identifying areas where repairs are warranted.
+                Condition assessments are often a vital step in the process of acquiring, repurposing, modifying, or expanding an existing
+                structure. We provide our clients with a thorough structural evaluation of the property; documenting the
+                current condition of the structure and identifying areas where repairs or enhancements are warranted.
               </p>
             </div>
           </div>
-          
+          <div class="col-lg-4 col-md-6">
+            <div class="features-icons-item  mx-auto ">
+              <h4>Structural Retrofits and Repairs</h4>
+              <p class="lead mb-5">
+                Whether your needs include General Building Repairs, Structural Evaluations per ASCE 41, Seismic Strengthening, 
+                Wind Mitigation Design, Seismic Risk Assessments with PMLs or Targeted Scope Retrofits, we provide valuable solutions 
+                for all structural retrofitting and repair needs. 
+              </p>
+            </div>
+          </div>
         </div>
   </section>
 
   <!-- TEAM -->
-  <section class="people bg-light" id="team">
+  <section class="people" id="team">
     <div class="">
       <h4 class="mb-5 ml-3 text-center">MEET OUR TEAM</h2>
         <div class="row text-center">
-          <div class="col-lg-4">
-            <a class="people-item mx-auto mb-5 mb-lg-0" href="about/scott">
-              <img class="img-fluid rounded-circle mb-3" src="img/scott.jpg" alt="">
-              <h5>Scott Stanford, SE, PE</h5>
-              <p class="font-weight-light mb-0">Principal | Partner</p>
-            </a>
-          </div>
-          <div class="col-lg-4">
+          <div class="col-lg-12">
             <a class="people-item mx-auto mb-5 mb-lg-0" href="about/javier">
-              <img class="img-fluid rounded-circle mb-3" src="img/javier.jpg" alt="">
+              <img class="img-fluid rounded-circle mb-4" style="max-width:13rem" src="img/javier.jpg" alt="">
               <h5>Javier A. Muniz, PE</h5>
-              <p class="font-weight-light mb-0">Principal | Partner</p>
+              <p class="font-weight-light mb-5">Principal | Partner</p>
             </a>
           </div>
-          <div class="col-lg-4">
-            <a class="people-item mx-auto mb-5 mb-lg-0" href="about/adam">
-              <img class="img-fluid rounded-circle mb-3" src="img/adam.jpg" alt="">
-              <h5>Adam Schnepple, PE.</h5>
-              <p class="font-weight-light mb-0">Principal | Partner</p>
-            </a>
-          </div>
-        </div>
     </div>
   </section>
 
   <!-- CONTACT US -->
-  <section class=" mt-2 m-b-5 module" id="contact">
+  <section class=" mt-2 m-b-5 module bg-light" id="contact">
     <h4 class="mb-5 ml-3  pt-5 text-center">CONTACT US</h2>
       <div class="container">
-        <div class="row">
+        <div class="row pb-3">
           <div class="col-md-12">
-            <form id="contactUsForm" action="#contact">
+
+            <form id="contactUsForm" action="https://formspree.io/xnqgpnpl" method="POST">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="inputName">Name:</label>
-                  <input type="text" required class="form-control" id="inputName" placeholder="Name">
+                  <input type="text" required class="form-control" id="inputName" name="name" placeholder="Name">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="inputEmail">Email:</label>
-                  <input type="email" required class="form-control" id="inputEmail" placeholder="someone@example.com">
+                  <input type="email" required class="form-control" id="inputEmail" name="email" placeholder="someone@example.com">
                 </div>
               </div>
               <div class="form-group">
                 <label for="inputSubject">Subject:</label>
-                <input type="text" required class="form-control" id="inputSubject" placeholder="Subject">
+                <input type="text" required class="form-control" name="subject" id="inputSubject" placeholder="Subject">
               </div>
               <div class="form-group">
                 <label for="inputAddress2">Message:</label>
-                <textarea type="text" required class="form-control" rows="4" id="inputAddress2" placeholder="Your message"> </textarea>
+                <textarea type="text" required class="form-control" rows="4" id="inputAddress2" name="message" placeholder="Your message"> </textarea>
               </div>
-              <a href="mailto:support@sms-ce.com"> <sub> Email us directly instead? </sub></a> 
-              <button type="clear" type="reset" class="btn btn-primary float-right" id="contactUsBtn" onclick="">
+              <a href="mailto:support@sms-ce.com">
+                <sub> Email us directly instead? </sub>
+              </a>
+              <button type="submit" class="btn btn-primary float-right" id="contactUsBtn" >
                 <i class="fa fa-envelope"> </i> &nbsp; Submit</button>
             </form>
           </div>
@@ -559,75 +342,19 @@
       </div>
   </section>
 
-  <section style="display: none">
-    <!-- Begin Mailchimp Signup Form -->
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      #mc_embed_signup {
-        background: #fff;
-        clear: left;
-        font: 14px Helvetica, Arial, sans-serif;
-      }
-
-      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-    <div id="mc_embed_signup">
-      <form action="https://github.us19.list-manage.com/subscribe/post?u=b2c64c6aa651432d85e8a5070&amp;id=bb50cf782e" method="post"
-        id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-          <h2>Contact Us</h2>
-          <div class="indicates-required">
-            <span class="asterisk">*</span> indicates required</div>
-          <div class="mc-field-group">
-            <label for="mce-EMAIL">Email Address
-              <span class="asterisk">*</span>
-            </label>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-          </div>
-          <div class="mc-field-group">
-            <label for="mce-FNAME">First Name </label>
-            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-          </div>
-          <div class="mc-field-group">
-            <label for="mce-MMERGE8">Your Message
-              <span class="asterisk">*</span>
-            </label>
-            <input type="text" value="" name="MMERGE8" class="required" id="mce-MMERGE8">
-          </div>
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-            <input type="text" name="b_b2c64c6aa651432d85e8a5070_bb50cf782e" tabindex="-1" value="">
-          </div>
-          <div class="clear">
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-          </div>
-        </div>
-      </form>
-    </div>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[8] = 'MMERGE8'; ftypes[8] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
-    <!--End mc_embed_signup-->
-
-  </section>
-
   <!-- Footer -->
   <footer class="footer bg-light text-center">
     <div class="container">
-      <div class="row d-none d-lg-block" style="height: 20px">
+      <!-- <div class="row d-none d-lg-block" style="height: 20px">
         <div class="col-12">
           <img src="img/facebook.png" class="footer-logo img-fluid" alt="">
           <img src="img/linkedin.png" class="footer-logo img-fluid" alt="">
         </div>
-      </div>
+      </div> -->
       <div class="row ">
         <div class="col-12">
-          <strong class="bold d-none d-sm-block"> STANFORD MUNIZ + SCHNEPPLE CONSULTING ENGINEERS, LLC. © </strong>
-          <strong class="bold d-block d-sm-none"> STANFORD MUNIZ + SCHNEPPLE © </strong>
+          <strong class="bold d-none d-sm-block"> MUNIZ CONSULTING ENGINEERS © </strong>
+          <strong class="bold d-block d-sm-none"> MUNIZ CONSULTING ENGINEERS © </strong>
         </div>
       </div>
     </div>
@@ -641,6 +368,8 @@
   <script src="js/map.js"></script>
   <script src="js/visible.js"></script>
   <script src="js/navbar.js"></script>
+  <script src="js/navbarCollapse.js"></script>
+
   <script src="js/contactus.js"></script>
   <script>
     console.log(`%c ________________________________________
@@ -653,12 +382,14 @@
                 ||     ||`, "font-family:monospace")
     var banner = $('.banner-home');
     var backgrounds = [
-      'url(../img/building4.jpg)',
-      'url(../img/miami2.jpeg)',
-      'url(../img/california.jpeg)',
-      'url(../img/miamiSplash.jpeg)',
-      'url(../img/laSplash.jpg)',
-      'url(../img/lasVegasSplash2.jpg)'
+      'url(../img/splash1.jpg)',
+      'url(../img/splash2.jpg)',
+      'url(../img/splash3.jpg)',
+      'url(../img/splash4.jpg)',
+      'url(../img/splash5.jpg)',
+      'url(../img/splash6.png)',
+      'url(../img/splash7.jpg)'
+
     ];
     banner.css('background-image', backgrounds[Math.floor(Math.random() * Math.floor(backgrounds.length))]);
   </script>
